@@ -1,9 +1,9 @@
 const {Model , DataTypes} = require("sequelize")
 const sequelize = require("./db")
 
-class Name extends Model {}
+class Note extends Model {}
 
-Name.init({
+Note.init({
     name : {
         type : DataTypes.STRING
     }, 
@@ -15,4 +15,4 @@ Name.init({
     modelName: 'names'
 })
 
-module.exports = Name;
+module.exports = Note;
